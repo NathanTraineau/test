@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendMetadata:DatabaseConnection xmi:id="_T5A6wNOKEeif18wjIyR9xQ" name="connexion_pays_simple" id="_Kl1fMNOKEeif18wjIyR9xQ" label="connexion_pays_simple" dataPackage="_ZNNtYNOMEeif18wjIyR9xQ" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://localhost:5432/formation" dbVersionString="PRIOR_TO_V9" Port="5432" Username="postgres" Password="uTIaVcVpURs=" ServerName="localhost" DatasourceName="" FileFieldName="" SID="formation" SqlSynthax="" StringQuote="" NullChar="" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="public">
+    <taggedValue xmi:id="_T5A6wdOKEeif18wjIyR9xQ" tag="Is Conn Need Reload" value="true"/>
+    <taggedValue xmi:id="_T5KrxtOKEeif18wjIyR9xQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_T5Krx9OKEeif18wjIyR9xQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_T5KryNOKEeif18wjIyR9xQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_T5KrydOKEeif18wjIyR9xQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_T5KrytOKEeif18wjIyR9xQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_T5Kry9OKEeif18wjIyR9xQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_T5KrzNOKEeif18wjIyR9xQ" tag="otherParameter"/>
+    <taggedValue xmi:id="_ZM8noNOMEeif18wjIyR9xQ" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_ZM8nodOMEeif18wjIyR9xQ" tag="DB ProductVersion" value="9.5.4"/>
+    <taggedValue xmi:id="_ZM8notOMEeif18wjIyR9xQ" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_T5A6wtOKEeif18wjIyR9xQ" key="CONN_PARA_KEY_USERNAME" value="postgres"/>
+    <parameters xmi:id="_X-LZUNOKEeif18wjIyR9xQ" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_ZNNtYNOMEeif18wjIyR9xQ" name="formation" dataManager="_T5A6wNOKEeif18wjIyR9xQ">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_ZNNtYdOMEeif18wjIyR9xQ" name="public">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_NIQRQdONEeif18wjIyR9xQ" name="pays_simple" id="_NIQRQNONEeif18wjIyR9xQ" label="pays_simple" tableType="TABLE">
+        <feature xsi:type="relational:TdColumn" xmi:id="_NIQRQtONEeif18wjIyR9xQ" name="code" label="code" length="2" sourceType="VARCHAR" talendType="id_String" key="true" nullable="false">
+          <taggedValue xmi:id="_NIQRQ9ONEeif18wjIyR9xQ" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_NIQRRNONEeif18wjIyR9xQ" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_NIQRRdONEeif18wjIyR9xQ" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_NIQRRtONEeif18wjIyR9xQ" name="nom" label="nom" length="100" sourceType="VARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_NIQRR9ONEeif18wjIyR9xQ" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_NIQRSNONEeif18wjIyR9xQ" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_NIQRSdONEeif18wjIyR9xQ" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+        </feature>
+      </ownedElement>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
